@@ -1,0 +1,228 @@
+:root {
+    --Monserate: "Open Sans", sans-serif;
+    --Pale-blue: #E5ECF9;
+    --grey: #8E9499;
+
+}
+
+body {
+    font-family: var(--Monserate);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 854px;
+    max-height: 641px;
+    margin: 0 auto;
+    background: linear-gradient(#B9CBF5, #A992F7);
+    padding: 6rem .5rem;  
+}
+
+.card {
+    max-width: 42.75rem;
+    margin: auto;
+
+}
+
+.card-body {
+    padding: 3rem 3.4375rem;
+    background-color: var(--Pale-blue);
+    position: relative;
+}
+
+.text {
+    font-size: .5rem;
+    margin-bottom: .6875rem;
+    color: var(--grey);
+}
+
+
+.flex {
+    display: flex;
+
+}
+
+.nav-bar {
+    padding: .6rem 3.4375rem;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.bank-name {
+    font-size: .7rem;
+    color: #1161D8;
+    font-weight: 600;
+}
+
+.menu-bar {
+    height: .9rem;
+    width: .8rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: #475862;
+}
+
+.card-text {
+    margin-bottom: 1.4rem;
+}
+
+.dollar-sign {
+    font-size: .6rem;
+}
+
+#chosen-purchase-price, #chosen-down-payment {
+    font-weight: 600;
+    color: #4A5863;
+    font-size: 1rem;
+}
+
+.chosen-price-grid {
+    display: grid;
+    grid-template-columns: .4375rem 4.375rem;
+    grid-gap: 6px;
+}
+
+.slider {
+    width: 13.875rem;
+    -webkit-appearance: none;
+    background: #CFD6E1;
+}
+
+.slider::-webkit-slider-runnable-track {
+    height: 1px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #0F51CF;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.slider-discription-items {
+    justify-content: space-between;
+    color: var(--grey);
+}
+
+.slider-discription {
+    font-size: .5rem;
+    margin-bottom: 1.3125rem;
+    color: var(--grey);
+}
+
+.checkbox {
+    border-radius: 50%;
+    
+}
+
+.prices {
+ justify-content: space-between;
+  
+}
+
+.period-of-downpayment{
+    gap: 50px;
+}
+
+.zipcode-number {
+    font-size: .5rem;
+}
+
+.btn {
+    position: absolute;
+    width: 72px;
+    height: 26px;
+    background-color: #A55AFF;
+    border: none;
+    border-radius: 8px;
+    bottom: 45px;
+    right: 165px;
+    color: white;
+    font-size: .6rem;  
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #A992F7;
+}
+
+label {
+    font-size: .5rem;
+    font-weight: 650;
+    align-self: center;
+    color: #444b52;
+
+}
+
+.radio {
+    width: 7px;
+    align-self: center;
+    margin: 0;
+}
+
+.period-option {
+    gap: .75rem;
+    align-items: center;
+}
+
+.calc-payment {
+    border-radius: 8px;
+    background-color: white;
+   align-self: center;
+   padding: 3.125rem 3.9375rem;
+}
+
+.calc-payment-title {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+    color: #92a3a8;
+    font-weight: 700;
+
+}
+
+#calc-result{
+font-size: 3rem;
+font-weight: 800;
+color: #3479CE;
+}
+
+#final-calc-payment {
+    display: grid;
+    grid-template-columns: .4375rem 4.375rem;
+    grid-gap: 6px;
+    margin-bottom: .8rem;
+}
+.interst-rate{
+  gap: 1.875rem;
+  color: var(--grey);
+}
+
+.interst-rate div p{
+    font-size: .5rem;
+}
+
+.interst-rate-num {
+    font-weight: 700;
+    color: #4A545A;
+    padding-top: .5rem;
+}

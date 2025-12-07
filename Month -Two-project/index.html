@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment</title>
+    <meta lang="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="./index.js" defer></script>    
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="nav-bar flex">
+                <h2 class="bank-name">AG BANK</h2>
+                <img src="./images/menu-bar.png" alt="menu bar" class="menu-bar">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Get started with Digital Credit Experience</h2>
+                <p class="text card-text">Quality or apply your mortgage in minutes</p>
+
+                <div class="prices flex">
+
+                    <div class="price-range">
+                        <div class="purchase-price">
+                            <p class="text">Purthase price</p>
+
+                            <div class="chosen-price-grid">
+                                <p class="dollar-sign">$</p>
+                                <p id="chosen-purchase-price"></p>
+                            </div>
+
+                            <input type="range" min="50000" max="2500000" step="250000" class="slider" id="slider-purchase-price">
+                            <div class="slider-discription-items flex">
+                                <p class="slider-discription">$50 000</p>
+                                <p class="slider-discription">$2.5 millions</p>
+                            </div>
+                        </div>
+
+                        <div class="down-payment">
+                            <p class="text">Down payment</p>
+
+                            <div class="chosen-price-grid">
+                                <p class="dollar-sign">$</p>
+                                <p id="chosen-down-payment"></p>
+                            </div>
+
+                            <input type="range" min="0" max="2500000" step="50000" class="slider" id="slider-down-payment">
+                            <p class="slider-discription">4% or more of purchase price</p>
+                        </div>
+
+                        <div class="period-of-downpayment flex">
+                            <div class="period">
+
+                                <p class="text">Period</p>
+                                <div >
+                                    <div class="period-option flex">
+                                        <input type="radio" name="radio" class="radio" id="radio-one">
+                                        <label>5/1 ARM variables</label>
+                                    </div>
+                                    <div class="period-option flex">
+                                        <input type="radio" name="radio" class="radio" id="radio-two">
+                                        <label>15 year fixed</label>
+                                    </div>
+                                    <div class="period-option flex">
+                                        <input type="radio" name="radio" class="radio" id="radio-three">
+                                        <label> 30 year fixed</label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="zipcode">
+                                <p class="text">Zip code</p>
+                                <p class="zipcode-number">90459</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="calc-payment">
+                        <p class="calc-payment-title">Your total payment will be</p>
+
+                        <div id="final-calc-payment">
+                            <p class="dollar-sign">$</p>
+                            <p id="calc-result"></p>
+                        </div>
+
+                        <div class="flex interst-rate">
+                            <div>
+                                <p>Rate</p>
+                                <p class="interst-rate-num">5.250%</p>
+
+                            </div>
+                            <div>
+                                <p>APR</p>
+                                <p class="interst-rate-num">4.418%</p>
+                            </div>
+                            <div>
+                                <p>Points</p>
+
+                                <p class="interst-rate-num">0.325</p>
+                            </div>
+
+
+                        </div>
+                        <button type="button" class="btn" id="btn">Get started</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
